@@ -3,7 +3,6 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:payymentts/Features/checkout/presentation/views/thank_you_view.dart';
 
-import 'package:payymentts/Features/checkout/presentation/views/widgets/custom_credit_card.dart';
 import 'package:payymentts/Features/checkout/presentation/views/widgets/payment_methods_list_view.dart';
 import 'package:payymentts/core/widgets/custom_button.dart';
 
@@ -25,12 +24,12 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
         const SliverToBoxAdapter(
           child: PaymentMethodsListView(),
         ),
-        SliverToBoxAdapter(
-          child: CustomCreditCard(
-            autovalidateMode: autovalidateMode,
-            formKey: formKey,
-          ),
-        ),
+        // SliverToBoxAdapter(
+        //   child: CustomCreditCard(
+        //     autovalidateMode: autovalidateMode,
+        //     formKey: formKey,
+        //   ),
+        // ),
         SliverFillRemaining(
           hasScrollBody: false,
           child: Align(
