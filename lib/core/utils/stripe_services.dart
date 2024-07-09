@@ -30,7 +30,7 @@ class StripeService {
     await Stripe.instance.initPaymentSheet(
       paymentSheetParameters: SetupPaymentSheetParameters(
           paymentIntentClientSecret: initiPaymentSheetInputModel.clientSecret,
-          merchantDisplayName: 'helmy',
+          merchantDisplayName: 'Helmy',
           customerEphemeralKeySecret:
               initiPaymentSheetInputModel.ephemeralKeySecret,
           customerId: initiPaymentSheetInputModel.customerId),
